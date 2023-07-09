@@ -1,6 +1,6 @@
 snowflake
 ====
-[![GoDoc](https://godoc.org/github.com/bwmarrin/snowflake?status.svg)](https://godoc.org/github.com/bwmarrin/snowflake) [![Go report](http://goreportcard.com/badge/bwmarrin/snowflake)](http://goreportcard.com/report/bwmarrin/snowflake) [![Coverage](http://gocover.io/_badge/github.com/bwmarrin/snowflake)](https://gocover.io/github.com/bwmarrin/snowflake) [![Build Status](https://travis-ci.org/bwmarrin/snowflake.svg?branch=master)](https://travis-ci.org/bwmarrin/snowflake) [![Discord Gophers](https://img.shields.io/badge/Discord%20Gophers-%23info-blue.svg)](https://discord.gg/0f1SbxBZjYq9jLBk)
+[![GoDoc](https://godoc.org/github.com/ZunoLabs/snowflake?status.svg)](https://godoc.org/github.com/ZunoLabs/snowflake) [![Go report](http://goreportcard.com/badge/ZunoLabs/snowflake)](http://goreportcard.com/report/ZunoLabs/snowflake) [![Coverage](http://gocover.io/_badge/github.com/ZunoLabs/snowflake)](https://gocover.io/github.com/ZunoLabs/snowflake) [![Build Status](https://travis-ci.org/ZunoLabs/snowflake.svg?branch=master)](https://travis-ci.org/ZunoLabs/snowflake) [![Discord Gophers](https://img.shields.io/badge/Discord%20Gophers-%23info-blue.svg)](https://discord.gg/0f1SbxBZjYq9jLBk)
 
 snowflake is a [Go](https://golang.org/) package that provides
 * A very simple Twitter snowflake generator.
@@ -57,13 +57,17 @@ Using the default settings, this allows for 4096 unique IDs to be generated ever
 
 ### Installing
 
+To clean this (forked) package:
+```sh
+go get github.com/ZunoLabs/snowflake
+```
 This assumes you already have a working Go environment, if not please see
 [this page](https://golang.org/doc/install) first.
 
+If you want to clone the original/upstream package:
 ```sh
 go get github.com/bwmarrin/snowflake
 ```
-
 
 ### Usage
 
@@ -86,7 +90,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/bwmarrin/snowflake"
+	"github.com/ZunoLabs/snowflake"
 )
 
 func main() {
@@ -141,3 +145,6 @@ go test -run=^$ -bench=.
 If your curious, check out this commit that shows benchmarks that compare a few 
 different ways of implementing a snowflake generator in Go.
 *  https://github.com/bwmarrin/snowflake/tree/9befef8908df13f4102ed21f42b083dd862b5036
+
+This links to the original/upstream repository. This is a forked package and may not
+be in-line with the benchmark report linked above.
